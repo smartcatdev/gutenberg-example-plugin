@@ -1,0 +1,35 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Eric Green <ericgreen.developer@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "develop": "yarn run clean && ./node_modules/.bin/webpack -d --watch --config webpack.development.js",
+    "build": "yarn run clean && ./node_modules/.bin/webpack -p --progress --config webpack.production.js",
+    "clean": "rm -rf ./build/*"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "mini-css-extract-plugin": "^0.2.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0"
+  }
+}
